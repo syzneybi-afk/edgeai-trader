@@ -1,9 +1,13 @@
 import type { MarketInstrument, OHLCVData, Signal, EntryAnalysis, BreakoutAnalysis, StopLossAnalysis, TakeProfitAnalysis } from './types'
 
-
+// ============================================================
+// CONFIG — Replace with your real Twelve Data API key
+// ============================================================
 const TWELVE_DATA_API_KEY = 'cfb4e9be899c4fdc8bcd7aafe9e0ec15'
 
-
+// ============================================================
+// LIVE PRICE FETCHING
+// ============================================================
 
 // Fetch live Forex prices from Twelve Data
 async function fetchForexPrices(): Promise<Record<string, { price: number; change: number; changePercent: number }>> {
