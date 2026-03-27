@@ -1,0 +1,6 @@
+[project]
+name = "edgeai-trader-backend"
+version = "1.0.0"
+description = "EdgeAI Trader - Technical Analysis API"
+requires-python = ">=3.12"
+dependencies = ["fastapi[standard]>=0.128.1"]
